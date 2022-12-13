@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+ <!--  <P id="dom">paragraph - 0</P>
+    <P class="dom1">paragraph - 1</P>
+    <p class="dom1">paragraph - 2</p>
+    <p class="dom1">paragraph - 3</p>
+
+
+    <ul><li>list 1</li>
+        <li>list 2</li>
+        <li>list 3</li>
+        <li>list 4</li> 
+        <li>list 5</li></ul>
+<br><br>-->
+
+    <script>
+       /* var a = document.body.children;//access a child
+        console.log(a);
+
+       //add new child in a body
+        var b = document.createElement("p");
+        var text = document.createTextNode("this is paragraph");
+        b.appendChild(text);
+       console.log(b);
+
+       document.body.appendChild(b);
+
+
+       // access first and last child
+
+       var c = document.querySelector("ul");
+       console.log(c);
+
+       console.log(c.firstChild);
+       console.log(c.lastChild);
+
+       // access silbling 
+
+       var d = dom.nextElementSibling.nextElementSibling;
+       console.log(d);
+
+
+       console.log(c.parentNode);
+      
+
+       */
+    var newdiv = document.createElement("div");
+    var text = document.createTextNode('To D0 List');
+    newdiv.append(text);
+    var input = document.createElement("input");
+    input.type = "text";
+    input.className = "todo"; 
+    input.id="todolist";
+    newdiv.appendChild(input);
+    var button =document.createElement("button");
+    button.type ="button";
+    button.className="btn1";
+    button.name="Edit";
+    button.onclick="fun1()";
+    newdiv.append(button);
+    var button =document.createElement("button");
+    button.type ="button";
+    button.className="btn2";
+    button.name="Delete";
+    button.onclick="fun2()";
+    newdiv.append(button);
+
+    console.log(newdiv);
+
+
+
+    </script>
+    </body>
+    </html>

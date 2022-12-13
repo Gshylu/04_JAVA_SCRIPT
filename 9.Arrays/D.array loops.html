@@ -1,0 +1,48 @@
+<!DOCTYPE html>  
+<html>
+    <head>
+        <style>
+            .arr {
+
+                padding:10px;
+                 background-color: aqua;
+                 height:25px;
+                 width:150px;
+                 text-align:center;
+                
+             }
+             .arr1{
+                 padding:10px;
+                 height:25px;
+                 width:150px;
+                 text-align:center;
+                 background-color:orange;
+             }
+         </style>
+ 
+        <title> loops of  array </title>
+    </head>        
+<body>
+   <script >
+    let arr = [] 
+    arr = ["A","B","C","D","E","F","G","H","I"]
+    let length = arr.length;
+    console.log("for of loop") // it will give you the value of  element
+    for(let i of arr){
+        if(i<3){
+            document.write('<p class="arr">value of  '+i+'</p>')
+        }else{
+            document.write('<p class="arr">value of '+i+'</p>')
+        }
+    }
+    console.log("for in loop") // it will give you the value of element index
+    for(let j in arr){
+        if(j<3){
+            document.write('<p class="arr1">value of '+j+'</p>')
+        }else{
+            document.write('<p class="arr1">value of '+j+'</p>')
+        }
+    }
+   </script>
+</body>
+</html>

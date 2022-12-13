@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>  
+<html>
+    <head>
+        <style>
+            *{
+               color: blue;
+            }
+
+        </style>
+        <title> local and global variables </title>
+    </head>        
+<body>
+    <script class="local and outer" type="text/javascript"> 
+
+    let outer=1;
+    //let local=5;
+     function odd() {
+        let local=1;
+        document.write("<p>"+local +"Local variable</p>")
+        document.write("<p>"+outer+"outer variable</p>")
+        local++;
+     }
+     for(let i=1;i<=10;i++){
+
+        if(i%3==0){
+            odd();
+        }else{ 
+            document.write("<p>hello!..I'm"+i+"</p>");
+
+        }
+        outer+=1;
+       // local+=1;
+     }
+   </script>
+
+</body>
+</html>

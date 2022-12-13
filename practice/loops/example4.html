@@ -1,0 +1,27 @@
+Write a JS code to delete all occurrence of element in given array
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Write a JS code to delete all occurrence of element in given array</title>
+</head>
+<body>
+    <script> 
+        function deleteElement(arr, ele) {
+        for (var i=0;i<arr.length;i++){
+         if(arr[i]==ele){
+          // arr.splice(i,1); //Delete element from array
+           arr.splice(i,2); // (i count of deleting items)…To access part of an array without modifying it
+        }
+    }
+    return arr;
+}
+        var arr = [23,4,4,4,78,5,63,47,210,45];
+        arr = deleteElement(arr,4) // (start , any repeting number user want to remove )
+
+        document.write(arr);  //23,4,78,5,63,47,210,45
+
+  
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    //3==fizz form 1 to 100
+    //5==buzz
+    //3*5==fizzbuzz
+    
+    var fizzbuzz =[];
+    let i=1;
+    function fizbuz(){
+    for(i=1;i<=100;i++){
+
+    
+        if(i%3==0 && i%5==0 ){
+          fizzbuzz.push("FizzBuzz"); 
+        }
+        else if(i%3==0){
+           fizzbuzz.push("Fizz"); 
+        }
+        else if(i%5==0){
+            fizzbuzz.push("Buzz");
+        
+        }else {
+            fizzbuzz.push(i);
+        }
+    }
+    console.log(fizzbuzz);
+    }
+    fizbuz();
+    /*
+      let i=1;
+    for(i=1;i<=100;i++){
+
+    
+        if(i%3==0 && i%5==0 ){
+          console.log("FizzBuzz"); 
+        }
+        else if(i%3==0){
+            console.log("Fizz"); 
+        }
+        else if(i%5==0){
+            console.log("Buzz");
+        
+        }else {
+            console.log(i);
+        }
+    }
+    */
+
+   </script> 
+</body>
+</html>

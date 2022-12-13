@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>  
+<html>
+    <head>
+        <title> default </title>
+    </head>        
+<body>
+   <script type="text/javascript"> 
+      
+      function   square(num , string ,float ){   // here we can provide the values for num,string in case the values is undefined
+        let sqr = num+num-num;
+        console.log(string);
+        console.log(float);
+        document.write("<p> square of " + num + "is " + sqr+"</p>") ;
+      } 
+      for(let i=1;i<5;i++){
+        if(i%2==0){
+        square(i,0.2);  //if we doesnot provide the any value then it shows undefined in the console
+      }else{             // we cannot even change the sequece of the function
+        square() 
+      }
+    }
+
+   </script>
+</body>
+</html>

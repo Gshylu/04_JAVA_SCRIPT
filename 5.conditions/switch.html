@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         //The switch statement is used to perform 
+         //different actions based on different conditions.
+        let A = "Apples"
+        switch (A) {
+               // if we have many conditions then the expression is verified
+               // for very case and it will compare if matches then code is excuted 
+            case 'Oranges':
+            document.write('Oranges are $0.59 a pound.');
+            break;
+            case 'Apples':
+            document.write('Apples are $1.59 a pound.');
+            break;
+            case 'Banana':
+            document.write('Banana are $3.59 a pound.');
+            break; 
+            //it breaks out of the switch block.
+            //This will stop the execution inside the switch block.
+            default:
+            document.write(`Sorry, we are out of ${A}.`);
+            //if not matches then  default code is excuted
+    }
+    </script>   
+</body>
+</html>

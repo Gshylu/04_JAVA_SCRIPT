@@ -1,0 +1,243 @@
+
+<html><head><title>string Methods</title></head>
+<body>
+<script>
+
+let A = "java Script "   /*  
+// it is basically a string
+//j(0),a(1),v(2),a(3),space(4),S(5),c(6),r(7),i(8),p(9),t(10),space(11)   
+//there are indexes of given string and even spaces are considered
+
+//string.length
+console.log(A.length)    
+//it gives length of the string >>returns (12) 
+
+//string.charAt
+console.log(A.charAt(5))  
+//which finds charater at given index >> returns (S)
+console.log(A.charAt());
+//if given index is empty >>returns (j) first index value
+ 
+//string.concat
+console.log(A.concat("code ", 20 ))
+//we can combine two strings or any number  >>returns(java Scriptcode 20).
+
+
+
+
+
+
+
+
+
+
+//string.endsWith
+
+//checks weather the string ends with the given charater 
+// if yes returns ture , no returns false
+console.log(A.endsWith("t")) 
+//returns (false) beacuse lastvalue is "space"
+console.log(A.endsWith("a",4))
+//returns (ture) 
+//(it starts searching from index 4 so the last value is a from java )
+
+
+//string.includes
+
+//it will search substring from the given string 
+//if matches then it will return ture or returns false
+console.log(A.includes("Scr")) 
+//returns(ture)                                   
+console.log(A.includes("Sch")) 
+//returns(false)
+console.log(A.includes("av",1))
+//returns(true)
+
+
+
+
+
+
+
+
+//string.indexOf
+
+//which will give the indexes of given charater first values
+console.log(A.indexOf("a"))
+// get the first index of the "a" >>returns (1)
+console.log(A.indexOf("s"))
+//for case-sensitive (where capital S given as small(s)) >>returns(-1) 
+console.log(A.indexOf());
+//no substring provided to search  >>returns (-1)
+console.log('undefined'.indexOf());
+//string is undefined so >>returns(0)
+console.log(A.indexOf("Script",10));
+//it start searching from last index or backwords >>returns(-1)
+
+
+
+
+
+
+
+
+
+
+//string,lastIndexOf
+
+//which will give the indexes of given charater last values
+console.log(A.lastIndexOf("a"))
+//The method starts searching from the end of the string for efficiency.
+console.log(A.lastIndexOf());
+//no substring provided to search  >>returns (-1)
+console.log('undefined'.lastIndexOf());
+//string is undefined so >>returns(0)
+console.log(A.lastIndexOf("S", 10));
+//searching from index 10 >> returns(5)
+console.log(A.lastIndexOf("a", -5));
+// searching from index -2 (backwords) >> which returns (-1)
+
+
+
+
+
+
+
+//string.repeat
+//which will repeat the strings
+console.log(A.repeat(2));
+// repeat the string by 2 times
+console.log(A.repeat(8.75));
+//it will convert the decimal to integer so it >> returns 8 times
+console.log(A.repeat(0));
+// repeat 0 times
+
+
+//string.slice
+//we can get the part of string and return a new string
+console.log(A.slice(0, 4));
+//returns (java) (start(0 index) to end(4 index))
+console.log(A.slice(0));
+//returns (java Script ) (start(0 index) to if nothing given : end(lastindex))
+console.log(A.slice(-6,-1));
+//form backwords >> returns (cript) (start(-6 index) to end(-1 index))
+
+
+
+
+
+
+
+//results will returns an array of substrings of split.
+console.log(A.split());
+//no search >>returns (['java Script'])
+console.log(A.split(''));
+// empty string >>returns space for every charater
+//['j', 'a', 'v', 'a', ' ', 'S', 'c', 'r', 'i', 'p', 't', ' ']
+console.log(A.split(' '));
+// space string >>returns space for every word 
+// ['java', 'Script', '']
+console.log(A.split('a'));
+//charater string>>return space for the given charater
+//['j', 'v', ' Script ']
+
+
+//check the given substring starts with the actuall string
+//if matches returns True ,if not returns false
+console.log(A.startsWith("java"));
+//return true
+console.log(A.startsWith("Java")); 
+//return false because of case-sensitive
+console.log(A.startsWith("ava", 1));
+//returns true which is present staring word
+
+
+
+console.log(A.substr(0, 4));
+//retruns (java)(start(0 index),number of charaters need to be extracted)
+console.log(A.substr(5));
+//returns (Script)(start(5 index), numbers of charaters (not given so it gives remaining charaters ))
+console.log(A.substr(-4, 3));
+//returns (Script)(start(-4 index from backwords),number of charaters(3))
+
+
+
+console.log(A.substring(6));
+//returns >> (cript) (start(0) to end(last index))
+console.log(A.substring(6, 8));
+//returns >> (cr) (start(6) to end(8))
+console.log(A.substring(8, 6));
+//returns >> (ava Script)  (start(8 which is out of index) to so it takes end(6 index))
+
+
+
+
+
+
+
+
+console.log(A.toLowerCase());
+//converts to lower-case >>returns (java script)
+
+console.log(A.toUpperCase());
+//converts to upper-case >>returns (JAVA SCRIPT)
+
+console.log(A.trim());
+// removes whitespaces from both ends of the string. Whitespaces are space, tabs, newline, etc. 
+
+console.log(A.valueOf())
+// returns the primitive value of a String object.
+
+
+
+
+
+//string.toString
+console.log(A.toString())
+let B = 10;
+//we can convert the number into strings in different number system
+console.log(B.toString(2))
+// number to binary(2) >> returns(1010) 
+console.log(B.toString(8))
+// number to octal(8) >> returns(12) 
+console.log(B.toString(16))
+//number to hexadecimal(16) >> returns(a) 
+
+
+*/
+
+
+//The search() method searches a string for a specified value 
+//and returns the position of the match:
+console.log(A.search("Script"))
+//returns (5)
+
+//The match() method returns an array which matches the substring given
+console.log(A.match("a"))
+//returns  ([a]) 
+
+//The matchAll() method returns all the matching values of substring as an  array 
+console.log(A.matchAll("a") )
+//returns we get RegExpStringIterator
+// we can see the output by converting into array
+
+let B = A.matchAll("a")
+//this method will convert into array
+let C = Array.from(B); 
+console.log(C)
+//returns ([a index(1), a (index(3)])
+
+
+//The replace() method replaces a specified value with another value in a string
+console.log(A.replace("java","ECMA"))
+//returns (ECMA Script )
+
+
+
+
+</script>
+</body>
+</html>
+
+
+

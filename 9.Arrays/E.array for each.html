@@ -1,0 +1,36 @@
+<!DOCTYPE html>  
+<html>
+    <head>
+        <style>
+            .arr {
+                 
+                 padding:10px;
+                 background-color: aqua;
+                 height:25px;
+                 width:150px;
+                 text-align:center;
+                
+             }
+             
+         </style>
+ 
+        <title> loops of  array </title>
+    </head>        
+<body>
+   <script >
+
+    function show(value,index){
+        document.write('<p class="arr">element at'+index+' is '+value+'</p>')
+    }
+    let arr= []
+    arr = ["A","B","C","D","E","F","G","H","I"]
+    //arr.splice(1,0,"AB") (index,element value,new element value)
+    //console.log("after splice"+arr)
+    // console.log(arr.push("Z")) // always for end
+    //console.log("after"+arr)
+    arr.forEach(show)
+   // show (4,5 ) simple call
+  
+   </script>
+</body>
+</html>

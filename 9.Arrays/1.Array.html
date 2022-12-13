@@ -1,0 +1,78 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+      
+
+ //Array Declaration
+
+//we can declare an array in two ways by 
+//1.array literals
+       //Array literal is a list of values enclosed in square brackets ([]).
+
+// defining empty array
+var empty = [];
+console.log(empty);
+
+// defining array with integers
+var numbers = [1, 2, 3, 4, 5];
+console.log(numbers);
+
+// defining array with strings
+var strings = ["Hello", "World"];
+console.log(strings);
+
+// defining array with mixed data
+var mixed = [1, "Hello", true, [1, 2, 3], {a: 1, b: 2}];
+console.log(mixed);
+
+
+
+
+
+
+
+//2.using  constructor
+      //It is a function that takes a variable number of arguments and returns an array.
+     //The function is called with the keyword new and the array constructor name.
+     // var arr = new Array(); >> this creates an array
+
+ // array with 0 length
+var empty = new Array();
+console.log(empty, empty.length);
+
+// array with integer
+var numbers = new Array(1, 2, 3, 4, 5);
+console.log(numbers, numbers.length);
+
+// mixed array
+var mixed = new Array(1, "Hello", true, 2.5, [1, 2]);
+console.log(mixed, mixed.length);
+
+
+
+
+
+
+
+
+
+
+
+
+//Array Length
+//it returns the number of elements in the array.
+
+// getting the length of an array
+var numbers = [1, 2, 3, 4, 5];
+console.log(numbers.length);
+
+// mixed array
+var arr = [1, 10.5, "Hello", true, [1, 2, 3], {a: 1, b: 2}];
+console.log(arr.length);
+
+
+
+        </script>
+    </body>
+</html>

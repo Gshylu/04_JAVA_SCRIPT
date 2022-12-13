@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="first">i am 1</p>   
+    <p id="last">i am 2</p> 
+    <script>
+
+        let x = document.createElement("p")
+        let text = document.createTextnode("any thing")
+        x.appendchild(text)
+        let temp1 =document.getElementById("first")
+        let temp =document.getElementById("last")
+        let body =x.parentnode()
+        body.insertBefore(temp1,temp)
+
+    </script>
+
+
+
+</body>
+</html>

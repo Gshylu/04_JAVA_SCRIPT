@@ -1,0 +1,38 @@
+<!DOCTYPE html>  
+<html>
+    <head>
+        <style>
+           .arr {
+
+                 padding:10px;
+                 background-color: aqua;
+                 height:25px;
+                 width:150px;
+                 text-align:center;
+                
+               
+            }
+        </style>
+        <title> function  array </title>
+    </head>        
+<body>
+   <script >
+    let arr = [] 
+    arr = ["A","B","C","D","E","F","G","H","I"]
+    let index = prompt("enter the index",);
+    document.write("<p class='arr'>element at "+index+" is "+arr[index]+"</p>")  
+    // arr.at(index) will also allow u for negitive valuses also form backwords
+
+
+    console.log("container\n"+arr);
+    console.log(arr.pop());
+    console.log("array after pop\n"+arr);
+    console.log(arr.push("J"));
+    console.log("array after push\n"+arr);
+    console.log(arr.shift("A"));
+    console.log("array after shift\n"+arr);
+    console.log(arr.unshift("c"));
+    console.log("array after unshift\n"+arr);
+   </script>
+</body>
+</html>

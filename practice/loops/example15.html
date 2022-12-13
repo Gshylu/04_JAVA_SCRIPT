@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>. Write a JS code to find duplicate values in a given array</title>
+    </head>
+<body>
+<script>
+              function findDup(arr) {
+              var arrDup=[]
+                   for(var i=0; i<arr.length; i++){
+                      if(arr.indexOf(arr[i])!=i&&arrDup.indexOf(arr[i])==-1){
+                           arrDup.push(arr[i]);
+                      }
+                    }
+                    return arrDup;
+                  }
+                    var arr = [4,2,34,4,1,12,1,4];
+                    console.log(findDup(arr)); //[4, 1]
+      
+</script>
+</body>
+</html>

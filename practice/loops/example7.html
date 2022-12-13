@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>  Write a JS code to find the no of digits in a number</title>
+</head>
+<body>
+    <script>
+                    /*    console.log(Math.floor(5.95));
+                        // expected output: 5
+
+                          console.log(Math.floor(5.05));
+                         // expected output: 5
+
+                          console.log(Math.floor(5));
+                          // expected output: 5
+
+                         console.log(Math.floor(-5.05));
+                       // expected output: -6*/
+
+
+
+
+
+
+              function digitCount(num) {
+              var count=0; //return 1 for pow=0
+              while(num!=0){
+              num=Math.floor(num/10);//The Math.floor() function returns the largest integer less than or equal to a
+                                       // given number.
+              count++;
+              }
+              return count;
+              }
+              console.log(digitCount(1789)); //4
+              console.log(digitCount(563349)); //6
+    </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+
+<<Document Object Model:
+The Document Object Model (DOM) is a programming interface for HTML(HyperText Markup Language) and XML(Extensible markup language) documents. It defines the logical structure of documents and the way a document is accessed and manipulated.
+
+<Note: It is called a Logical structure because DOM doesn’t specify any relationship between objects.
+APIs are machine-readable interfaces that allow software products to communicate data and functionality.
+basically Document Object Model is an API that represents and interacts with HTML or XML documents.
+
+<<Why DOM is required?
+  the javascript can not understand the HTML document directly. So, a corresponding document is created(DOM). DOM is basically the representation of the same HTML document but in a different format with the use of objects. Javascript interprets DOM easily i.e javascript can not understand the tags(<h1>H</h1>) in HTML document but can understand object h1 in DOM. Now, Javascript can access each of the objects (h1, p, etc) by using different functions.
+
+ <<Structure of DOM: 
+ 1  DOM can be thought of as a Tree or Forest(more than one tree).
+
+ 2  The term structure model is sometimes used to describe the tree-like representation of a document. 
+
+ 3   Each branch of the tree ends in a node, and each node contains objects  Event listeners can be added to             
+            nodes and triggered on an occurrence of a given event.
+
+  4   One important property of DOM structure models is structural isomorphism: if any two DOM implementations are used to create a representation of the same document, they will create the same structure model, with precisely the same objects and relationships.
+
+
+<<Why called an Object Model?
+
+Documents are modeled using objects, and the model includes not only the structure of a document but also the behavior of a document and the objects of which it is composed like tag elements with attributes in HTML.
+
+
+<<Properties of DOM:
+
+ Let’s see the properties of the document object that can be accessed and modified by the document object.
+
+
+  window object : it is like API which is used to set and access the all the properties and methods of the browser and it is automatically created by the browser
+
+  Document object:when it is loaded in the window then it becomes document object  and also allowes the external modifications and gives access to elements of HTML  
+  >>>Form,Anchor,Link ojects 
+  >>>Form control elements may contain text fields,buttons ,radio buttons,checkboxes,etc
+
+
+
+<<Methods of Document Object:
+
+
+write(“string”)
+getElementById() 
+getElementsByName()
+getElementsByTagName()
+getElementsByClassName() 
+Document.getElementsByTagNameNS()
+
+<<properties of DOM
+document.createElement(element)	
+document.removeChild(element)	
+document.appendChild(element)	
+document.replaceChild(new, old)	
+document.write(text)	
+
+properties and methods we can  use them mdnwebsite
+<!--The innerHTML proper
+ty can be used to get or change any HTML element, including <html> and <body>.-->
+
+<<JavaScript Form Validation
+HTML form validation can be done by JavaScript
+Data Validation
+Data validation is the process of ensuring that user input is clean, correct, and useful.
+
+Typical validation tasks are:
+
+has the user filled in all required fields?
+has the user entered a valid date?
+has the user entered text in a numeric field?
+Most often, the purpose of data validation is to ensure correct user input.
+
+Validation can be defined by many different methods, and deployed in many different ways.
+
+Server side validation is performed by a web server, after input has been sent to the server.
+
+Client side validation is performed by a web browser, before input is sent to a web server.
+
+<<<<Reacting to Events
+A JavaScript can be executed when an event occurs, like when a user clicks on an HTML element.
+
+To execute code when a user clicks on an element, add JavaScript code to an HTML event attribute:
+
+onclick=JavaScript
+Examples of HTML events:
+
+When a user clicks the mouse
+When a web page has loaded
+When an image has been loaded
+When the mouse moves over an element
+When an input field is changed
+When an HTML form is submitted
+When a user strokes a key  

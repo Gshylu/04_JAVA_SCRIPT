@@ -1,0 +1,69 @@
+
+
+
+  <!-- 
+    js interaction with HTML is handled at through events
+    that occur when the user or the  browser manipulates a page.
+
+    events are a part of the dom level-3 and every HTML element contains a set 
+    of events which can trigger js code
+
+    when the page loads , it is called an event . when the user clicks a button ,
+    that click too is an event  . other examples include events like pressing any key ,
+    closing a window, resizing a window,etc.
+
+
+    onclick
+    onmouseover and onmouseout
+    onkeydown script script runs when key is pressed
+    onkeypress script script runs when key is pressed and released
+    onkeyup script script runs when key is released
+  -->
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h1>click here for viewing the different event colors of the apps</h1>
+
+  <button onclick="facebook()">click here</button>
+  <button onclick="whatsup()">click here</button>
+  <button onclick="twitter()">click here</button>
+  <button onclick="youtube()">click here</button>
+
+ <!--<button onmouseenter="facebook()">click here</button>
+  <button onmouseup="whatsup()">click here</button>
+  <button onmousedown="twitter()">click here</button>
+  <button onmouseout="youtube()">click here</button>  by using mouse
+
+  <button onkeypress="facebook()">click here</button>
+  <button onkeyup="whatsup()">click here</button>
+  <button onkeydown="twitter()">click here</button>
+  <button onkeyout="youtube()">click here</button> by using keyboard-->
+
+
+
+
+
+  <script>
+    function facebook(){
+      document.body.style.backgroundColor='#3b5999';//facebook color
+      document.body.style.color="white";
+    }
+    function whatsup(){
+      document.body.style.backgroundColor='#25D366';
+      document.body.style.color="white";
+    }
+    function twitter(){
+      document.body.style.backgroundColor='#00aced';
+      document.body.style.color="white";
+    }
+    function youtube(){
+      document.body.style.backgroundColor='#cd201f';
+      document.body.style.color="white";
+    }
+  </script>
+
+
+
+</body>
+</html> 

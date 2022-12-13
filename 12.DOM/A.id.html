@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <P id="dom">paragraph - 0</P>
+    <P class="dom1">paragraph - 1</P>
+    <div class="dom1">paragraph - 2</div>
+    <div class="dom1">paragraph - 3</div>
+
+
+
+
+
+    <br><br><br>
+<script>
+    var a = document.getElementById("dom").innerHTML;
+    document.write(a);
+</script>
+
+<br><br><br>
+
+<script>
+    var b = document.getElementsByClassName("dom1")[0].innerHTML;
+    document.write(b);
+</script>
+
+<br><br><br>
+
+<script>
+    var c = document.getElementsByTagName("p")[1].innerHTML;
+    document.write(c);
+    console.log(c);
+</script>
+
+<br><br><br>
+
+
+<script>
+    var d = document.querySelector("div").innerHTML; // to get any first element
+    document.write(d);   // by innerHTML we can get the content inside the tag/element
+    console.log(d);
+</script>
+
+
+    
+</body>
+</html>
